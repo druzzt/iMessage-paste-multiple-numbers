@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iMessagePasteNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="; or , or others" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-eK-x0R">
+                                <rect key="frame" x="20" y="86" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="cc-number"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Separator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQO-9K-TV7">
+                                <rect key="frame" x="20" y="66" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8r-rT-rl5">
+                                <rect key="frame" x="20" y="128" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" text="+48505862590, +48725467602" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MXx-cw-zeS">
+                                <rect key="frame" x="20" y="148" width="374" height="312"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="cc-number"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Optional) Text Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-Vj-20d">
+                                <rect key="frame" x="20" y="468" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" text="Hello from the other side of the iMessages!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Abd-sv-PuN">
+                                <rect key="frame" x="20" y="488" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fbx-t4-klq"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiG-K8-HjO">
+                                <rect key="frame" x="135" y="733" width="145" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="sIL-MW-aTL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Ready"/>
+                                <connections>
+                                    <action selector="readyButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAT-Fi-H4W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MXx-cw-zeS" firstAttribute="leading" secondItem="zcs-Vj-20d" secondAttribute="leading" id="0nI-Od-ufy"/>
+                            <constraint firstItem="zcs-Vj-20d" firstAttribute="leading" secondItem="Abd-sv-PuN" secondAttribute="leading" id="73Z-hi-ctf"/>
+                            <constraint firstItem="MXx-cw-zeS" firstAttribute="top" secondItem="CTQ-eK-x0R" secondAttribute="bottom" constant="28" id="7R2-C9-Wak"/>
+                            <constraint firstItem="Abd-sv-PuN" firstAttribute="top" secondItem="MXx-cw-zeS" secondAttribute="bottom" constant="28" id="7z8-Y6-v63"/>
+                            <constraint firstItem="eQO-9K-TV7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="9mD-Gp-Lww"/>
+                            <constraint firstItem="u8r-rT-rl5" firstAttribute="leading" secondItem="MXx-cw-zeS" secondAttribute="leading" id="AjV-Sx-PG4"/>
+                            <constraint firstItem="eQO-9K-TV7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DD0-6r-dYA"/>
+                            <constraint firstItem="CTQ-eK-x0R" firstAttribute="leading" secondItem="u8r-rT-rl5" secondAttribute="leading" id="Ey9-kX-DaA"/>
+                            <constraint firstItem="u8r-rT-rl5" firstAttribute="top" secondItem="CTQ-eK-x0R" secondAttribute="bottom" constant="8" id="Fn1-u4-PQ2"/>
+                            <constraint firstItem="GiG-K8-HjO" firstAttribute="top" secondItem="Abd-sv-PuN" secondAttribute="bottom" constant="95" id="Fvx-vD-J7Q"/>
+                            <constraint firstItem="CTQ-eK-x0R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="KDB-bL-PYE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GiG-K8-HjO" secondAttribute="bottom" constant="70" id="S81-E0-yfY"/>
+                            <constraint firstItem="MXx-cw-zeS" firstAttribute="trailing" secondItem="Abd-sv-PuN" secondAttribute="trailing" id="WLK-Ss-xNo"/>
+                            <constraint firstItem="Abd-sv-PuN" firstAttribute="centerX" secondItem="GiG-K8-HjO" secondAttribute="centerX" id="XlZ-k5-Q4q"/>
+                            <constraint firstItem="eQO-9K-TV7" firstAttribute="leading" secondItem="CTQ-eK-x0R" secondAttribute="leading" id="ajm-a4-QfD"/>
+                            <constraint firstItem="GiG-K8-HjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="bWc-mj-Wtr"/>
+                            <constraint firstItem="CTQ-eK-x0R" firstAttribute="trailing" secondItem="MXx-cw-zeS" secondAttribute="trailing" id="hHf-bS-Taa"/>
+                            <constraint firstItem="zcs-Vj-20d" firstAttribute="top" secondItem="MXx-cw-zeS" secondAttribute="bottom" constant="8" id="oTA-Fe-txs"/>
+                            <constraint firstItem="CTQ-eK-x0R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tRM-k9-QJl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneNumbersTextView" destination="MXx-cw-zeS" id="Q7h-hI-9T4"/>
+                        <outlet property="separatorsTextField" destination="CTQ-eK-x0R" id="7Dq-29-PdO"/>
+                        <outlet property="textMessageTextView" destination="Abd-sv-PuN" id="eH7-8R-N9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.405797101449281" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
